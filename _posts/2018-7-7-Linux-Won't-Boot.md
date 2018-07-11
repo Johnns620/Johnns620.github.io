@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Linux Won't Boot!
 ---
 
@@ -31,6 +31,7 @@ $ ip link set *interface* up
 ```bash
 $ wpa_supplicant -B -i *interface* -c <(wpa_passphrase MYSSID passphrase)
 ```
+`passphrase` and `MYSSID` depend on your router.
 
 ### Step 3: Mount File System
 1. Use `fdisk -l` to determine the drive with your broken Linux OS, and use `uname -m` to determine the architecture (32bit or 64bit).
@@ -43,17 +44,25 @@ $ mount -t proc proc /mnt/proc
 $ mount -t sysfs sys /mnt/sys
 $ mount -o bind /dev /mnt/dev
 {% endhighlight %}
-**NB:** I did not need to mount the /boot directory to install a different version of the GRUB bootloader. However, if your `/boot` directory is on a different partition from `/`, you will need to mount it with `mount -t ext4 /dev/sda2 /mnt/boot` (if it is located on `/dev/sda2`).
+**NB:** I did not need to mount the /boot directory to install a different version of the GRUB bootloader. However, if your `/boot` directory is on a different partition from `/`, you will need to mount it with `mount -t ext4 /dev/sda2 /mnt/boot` (if it is located on `/dev/sda2` for example).
 
 ### Step 4: Perform `chroot` and Fixes
 1. Perform the chroot:
 ```bash
-chroot /mnt /bin/bash
+$ chroot /mnt /bin/bash
 ```
 Now the root directory is that of your broken Linux installation. Perform `sudo apt-get update` or `grub-install` or other installations to fix your specific issue. For my issue, I rolled back my version of GRUB bootloader and all was well.
 
 ### Step 5: Exit Cleanly
-Unmount all partitions with `umount /mnt/{proc, sys, dev}` (and `/mnt/boot` if needed), and then unmount the system drive with `umount /mnt`.
+Unmount all partitions:
+```bash
+$ umount /mnt/{proc, sys, dev}
+$ umount /mnt/boot  # if needed
+```
+Then unmount the system drive:
+```bash
+$ umount /mnt
+```
 Reboot the system with `reboot`.
 
 That should do it!. Take a look at the references below if necessary.
@@ -61,6 +70,6 @@ That should do it!. Take a look at the references below if necessary.
 ### References
 - [Arch Linux Wireless Network configuration](https://wiki.archlinux.org/index.php/Wireless_network_configuration)
 - [WPA_supplicant Setup](https://wiki.archlinux.org/index.php/WPA_supplicant#Advanced_usage)
-- [What's the proper way to prepare chroot to recover a broken Linux installation?, Post on superuser.com](https://superuser.com/questions/111152/whats-the-proper-way-to-prepare-chroot-to-recover-a-broken-linux-installation)
+- [What's the proper way to prepare chroot to recover a broken Linux installation?](https://superuser.com/questions/111152/whats-the-proper-way-to-prepare-chroot-to-recover-a-broken-linux-installation)
 - [Updating Debian Under a Chroot](http://shallowsky.com/blog/tags/chroot/)
 - [Installing GRUB using grub-install](https://www.gnu.org/software/grub/manual/grub/html_node/Installing-GRUB-using-grub_002dinstall.html)
