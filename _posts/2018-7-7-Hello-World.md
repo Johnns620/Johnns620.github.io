@@ -7,7 +7,7 @@ title: Hello, World!
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I took my first programming class during the summer of 2011 at the end my sophomore year in college. The language was C++ -- the best choice for new learners, in my opinion. The language was C++ – the best choice for new learners, in my opinion.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**In fact, I recommend reading Bjarne Stroustrup’s text, [The C++ Programming Language(), as a first text. He did create the language, after all.**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**In fact, I recommend reading Bjarne Stroustrup’s text, [*The C++ Programming Language*](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840), as a first text. He did create the language, after all.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout my junior and senior years, I made use of Fortran, C++, and mostly Matlab for solving problems in my engineering courses, but during this time, my programs were fairly simple and did not make use of object-oriented programming, data structures, or algorithm analysis. It wasn't until after the university, when I began working with robotics, automation, and data acquisition systems with a data-driven company, that I became interested in learning more about software engineering.
 
@@ -19,7 +19,7 @@ title: Hello, World!
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**I knew that if I became knowledgeable of applied math, I would have the background necessary to solve problems in physical modeling and data science, two of my main interests.**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That year I moved on from the introductory programming texts to studying data structures and algorithms. My main reference was [Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338) by M. Goodrich et al.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That year I moved on from the introductory programming texts to studying data structures and algorithms. My main reference was [*Data Structures and Algorithms in Java*](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338) by M. Goodrich et al.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the summer of 2016, the site where I worked was shut down. You can read about that [here](https://www.bizjournals.com/triangle/blog/techflash/2015/10/monsanto-to-close-research-triangle-park-rd-site.html). I think in general a layoff is bad, but for me it provided the opportunity to run full-steam ahead into software development. The very first thing I did was build my computer (a solid machine if I do say so myself), dual booting with Windows 10 and Linux Mint 18 Sarah.
 
@@ -31,7 +31,7 @@ title: Hello, World!
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Almost two years have passed and I'm still updating and working on my personal website regularly.**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In spring of 2017 I began my master's degree program at UW-Seattle. My first class was AMATH 583: High-Performance Scientific Computing. Up to this point in time it has been my favorite class of all time. I started developing my [HPC-Library](https://github.com/JohnSell620/HPC-Library) during the course, and after the semester I started working on a C++ desktop application using Qt Creator -- [NumInt](https://github.com/JohnSell620/NumInt), which tests HPC-Library and also evaluates triple integrals.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In spring of 2017 I began my master's degree program at UW-Seattle. My first class was AMATH 583: High-Performance Scientific Computing. Up to this point in time it has been my favorite class of all time. I started developing my [HPC-Library](https://github.com/JohnSell620/HPC-Library) during the course, and after the semester I started working on a C++ desktop application using Qt Creator, [NumInt](https://github.com/JohnSell620/NumInt), which tests HPC-Library and also evaluates triple integrals.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**In Summer of 2017 I also began my journey down the road of machine learning.As one might expect, it's very exciting, and I plan to blog on that voyage at a later date.**
 
