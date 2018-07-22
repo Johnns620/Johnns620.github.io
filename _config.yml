@@ -29,8 +29,10 @@ url: "https://Johnns620.github.io" # the base hostname & protocol for your site,
 github_username:  JohnSell620
 linkedin_username: johnny-sellers-b26819128
 # stackoverflow_username: users/4518224/johnny-sellers
-
-
+twitter:
+  username: JohnnySellers62
+  card: summary
+  
 google_analytics: UA-120544244-1
 
 # Build settings
@@ -38,6 +40,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 show_excerpts: true
 # Exclude from processing.
