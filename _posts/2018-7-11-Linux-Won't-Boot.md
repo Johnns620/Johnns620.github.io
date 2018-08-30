@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Linux Won't Boot!
+title: Linux Won't Boot! How to Restore a Broken Linux Installation
 ---
 
 In this post I will discuss how to fix the issue of your Linux OS (Mint, Ubuntu, CentOS, etc.) not booting, say, after doing an update or installing disagreeable software.
